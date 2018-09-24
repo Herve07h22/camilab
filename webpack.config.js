@@ -10,6 +10,7 @@ module.exports = {
     rules: [
       {
         test: /\.css$/,
+        exclude: path.resolve('./node_modules'),
         use: ExtractTextPlugin.extract({
           fallback: 'style-loader',
           use: [
