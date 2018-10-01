@@ -3,3 +3,38 @@
 @tailwind components;
 
 @tailwind utilities;
+
+.w-1\/3m {
+    width: 32%;
+  }
+
+@media (min-width: 768px) {
+    .md\:w-1\/3m {
+        width: 32%;
+  }
+}
+
+.transition-normal {
+    transition: .2s ease-in-out;
+  }
+
+.-translate-50-50 {
+-webkit-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+}
+
+.transform-scale-1-1 {
+-webkit-transform: scale(1.1);
+        transform: scale(1.1);
+}
+
+.hover\:translate-y-1:hover {
+-webkit-transform: translateY(-1px);
+        transform: translateY(-1px);
+}
+
+.hover\:transform-scale-subtle:hover {
+-webkit-transform: scale(1.03);
+        transform: scale(1.03);
+}
+  
