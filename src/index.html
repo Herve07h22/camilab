@@ -27,6 +27,36 @@
     <meta property="og:description" content="Camilab est une agence qui accompagne le développement numérique des entreprises et les débuts des start-ups." />
     <meta property="og:image" content="https://camilab.co/assets/twitter_large.png" />
 
+    <!-- Matomo -->
+    <script type="text/javascript">
+      var _paq = _paq || [];
+      /* non prorogation des cookies : https://www.cnil.fr/sites/default/files/typo/document/Configuration_piwik.pdf */
+      _paq.push([function() {
+        var self = this;
+        function getOriginalVisitorCookieTimeout() {
+          var now = new Date(),
+          nowTs = Math.round(now.getTime() / 1000),
+          visitorInfo = self.getVisitorInfo();
+          var createTs = parseInt(visitorInfo[2]);
+          var cookieTimeout = 33696000; // 13 mois en secondes
+          var originalTimeout = createTs + cookieTimeout - nowTs;
+          return originalTimeout;
+        }
+        this.setVisitorCookieTimeout( getOriginalVisitorCookieTimeout() );
+      }]);
+      _paq.push(["setDomains", ["*.camilab.co"]]);
+      _paq.push(['trackPageView']);
+      _paq.push(['enableLinkTracking']);
+      (function() {
+        var u="//analytics.smsdialogue.com/piwik/";
+        _paq.push(['setTrackerUrl', u+'piwik.php']);
+        _paq.push(['setSiteId', '2']);
+        var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+        g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
+      })();
+    </script>
+    <!-- End Matomo Code -->
+
   </head>
   <body>
       <nav class="font-sans bg-white text-center flex justify-between my-4 mx-auto container overflow-hidden">
@@ -39,11 +69,7 @@
         <div class="container m-auto flex flex-col items-center max-w-xl">
             <div class="flex flex-col w-full py-12 px-8">
               <h1 class="my-4 font-bold text-5xl text-center">Votre business décolle grâce au web</h1>
-              <p class="leading-normal justify-center mb-4 px-2 text-justify">
-              Puisque la naissance d’Internet remonte à la fin des années 80, les nouveaux usages du numérique sont une évidence pour vos jeunes clients.
-              Mécaniquement, leur proportion va s’accroître dans les années à venir. 
-              <b>Les entreprises qui anticipent mal cette évolution risquent une érosion de leur chiffre d’affaires au profit de concurrents mieux préparés.</b>
-              </p>
+              
               <p class="leading-normal justify-center mb-4 px-2 text-justify">
                 Camilab est une agence qui accompagne le développement numérique des entreprises et les débuts des start-up.
                 Le web offre de nombreuses opportunités de <b>trouver des nouveaux clients, développer de nouveaux services, ou augmenter la valeur de vos prestations</b>.
@@ -105,44 +131,88 @@
 
         <div class="container max-w-xl m-auto flex flex-wrap flex-row items-stretch justify-between">
 
-            <div class="md:w-1/2m w-full bg-white rounded-lg border-grey-darker shadow my-8 px-4 py-2 transition-normal hover:transform-scale-subtle">
+            <div class="relative md:w-1/3m w-full bg-white rounded-lg border-grey-darker shadow my-8 px-4 py-2 transition-normal hover:transform-scale-subtle">
+              <img class="w-full" src="./assets/maboutiqueenligne-screenshot.png" alt="Eboutique screenshot">
+              <div class="p-6 flex flex-col justify-between ">
+                <h3 class="font-medium text-grey-darkest mb-4 leading-normal">Ajoutez un bouton "achetez" dans votre boutique Facebook</h3>
+                <p class="inline-flex items-center mb-4">
+                    
+                        <span class="inline-block bg-grey-lighter rounded-full px-3 py-1 text-sm font-semibold text-grey-darker mr-2">#python</span>
+                        <span class="inline-block bg-grey-lighter rounded-full px-3 py-1 text-sm font-semibold text-grey-darker mr-2">#AWS</span>
+                        <span class="inline-block bg-grey-lighter rounded-full px-3 py-1 text-sm font-semibold text-grey-darker">#jQuery</span>
+                </p>
+                
+              </div>
+              <div class="absolute pin-x pin-b py-4 text-center"></p>    
+                  <a class="text-red text-sm hover:text-blue-darker no-underline" href="https://maboutiqueenligne.cleverapps.io/">Voir le site</a>
+              </div>    
+            </div>
+
+            <div class="relative md:w-1/3m w-full bg-white rounded-lg border-grey-darker shadow my-8 px-4 py-2 transition-normal hover:transform-scale-subtle">
               <img class="w-full" src="./assets/jonjon.png" alt="Eboutique screenshot">
               <div class="p-6 flex flex-col justify-between ">
-                <h3 class="font-medium text-grey-darkest mb-4 leading-normal">Votre boutique en ligne pour vendre vos produits de façon simple et sécurisée</h3>
-                <p class="inline-flex items-center">
-                  <a class="text-grey-dark text-sm hover:text-blue-darker no-underline" href="https://jonjon.netlify.com">Voir le site</a>
+                <h3 class="font-medium text-grey-darkest mb-4 leading-normal">Votre site de e-commerce pour vendre vos produits de façon simple et sécurisée</h3>
+                <p class="inline-flex items-center mb-4">
+                    
+                        <span class="inline-block bg-grey-lighter rounded-full px-3 py-1 text-sm font-semibold text-grey-darker mr-2">#VueJS</span>
+                        <span class="inline-block bg-grey-lighter rounded-full px-3 py-1 text-sm font-semibold text-grey-darker mr-2">#JAMStack</span>
+                        <span class="inline-block bg-grey-lighter rounded-full px-3 py-1 text-sm font-semibold text-grey-darker">#netlify</span>
                 </p>
+                
+              </div>
+              <div class="absolute pin-x pin-b py-4 text-center">        
+                  <a class="text-red text-sm hover:text-blue-darker no-underline" href="https://jonjon.netlify.com">Voir le site</a>
               </div>    
             </div>
 
-            <div class="md:w-1/2m w-full bg-white rounded-lg border-grey-darker shadow my-8 px-4 py-2 transition-normal hover:transform-scale-subtle">
+            <div class="relative md:w-1/3m w-full bg-white rounded-lg border-grey-darker shadow my-8 px-4 py-2 transition-normal hover:transform-scale-subtle">
               <img class="w-full" src="./assets/camilab-meteo.png" alt="Meteo screenshot">
               <div class="p-6 flex flex-col justify-between ">
-                <h3 class="font-medium text-grey-darkest mb-4 leading-normal">La météo sur votre mobile, sans passer par le store, et qui fonctionne hors ligne !</h3>
-                <p class="inline-flex items-center">
-                  <a class="text-grey-dark text-sm hover:text-blue-darker no-underline" href="https://camilab-meteo.netlify.com">Voir le site sur votre mobile</a>
+                <h3 class="font-medium text-grey-darkest mb-4 leading-normal">La météo sur votre mobile, sans passer par le store, et qui fonctionne hors connexion</h3>
+                <p class="inline-flex items-center mb-4">
+                  <span class="inline-block bg-grey-lighter rounded-full px-3 py-1 text-sm font-semibold text-grey-darker mr-2">#VanillaJS</span>
+                  <span class="inline-block bg-grey-lighter rounded-full px-3 py-1 text-sm font-semibold text-grey-darker mr-2">#PWA</span>
                 </p>
+                
+              </div>
+              <div class="absolute pin-x pin-b py-4 text-center">
+                <a class="text-red text-sm hover:text-blue-darker no-underline" href="https://camilab-meteo.netlify.com">Voir le site sur votre mobile</a>
               </div>    
             </div>
 
-            <div class="md:w-1/2m w-full bg-white rounded-lg border-grey-darker shadow my-8 px-4 py-2 transition-normal hover:transform-scale-subtle">
+            <div class="relative md:w-1/3m w-full bg-white rounded-lg border-grey-darker shadow my-8 px-4 py-2 transition-normal hover:transform-scale-subtle">
               <img class="w-full" src="./assets/mediumino.png" alt="Mediumino screenshot">
               <div class="p-6 flex flex-col justify-between ">
                 <h3 class="font-medium text-grey-darkest mb-4 leading-normal">Mediumino scrute chaque jour les articles publiés sur Medium.com en français</h3>
-                <p class="inline-flex items-center">
-                  <a class="text-grey-dark text-sm hover:text-blue-darker no-underline" href="https://mediumino.fr">Voir le site</a>
+                <p class="inline-flex items-center mb-4">
+                  <span class="inline-block bg-grey-lighter rounded-full px-3 py-1 text-sm font-semibold text-grey-darker mr-2">#python</span>
+                  <span class="inline-block bg-grey-lighter rounded-full px-3 py-1 text-sm font-semibold text-grey-darker mr-2">#scrapy</span>
+                  <span class="inline-block bg-grey-lighter rounded-full px-3 py-1 text-sm font-semibold text-grey-darker">#netlify</span>
                 </p>
+                
+              </div>
+              <div class="absolute pin-x pin-b py-4 text-center">
+                <a class="text-red text-sm hover:text-blue-darker no-underline" href="https://mediumino.fr">Voir le site</a>
               </div>
             </div>
 
-            <div class="md:w-1/2m w-full bg-white rounded-lg border-grey-darker shadow my-8 px-4 py-2 transition-normal hover:transform-scale-subtle">
+            <div class="relative md:w-1/3m w-full bg-white rounded-lg border-grey-darker shadow my-8 px-4 py-2 transition-normal hover:transform-scale-subtle">
               <img class="w-full" src="./assets/storeed.png" alt="Storeed screenshot">
               <div class="p-6 flex flex-col justify-between ">
                 <h3 class="font-medium text-grey-darkest mb-4 leading-normal">Storeed transforme votre fil tweeter en blog personnel</h3>
-                <p class="inline-flex items-center">
-                    <a class="text-grey-dark text-sm hover:text-blue-darker no-underline" href="https://www.storeed.me">Voir le site</a>
+                <p class="inline-flex items-center mb-4">
+                  <span class="inline-block bg-grey-lighter rounded-full px-3 py-1 text-sm font-semibold text-grey-darker mr-2">#VueJS</span>
+                  <span class="inline-block bg-grey-lighter rounded-full px-3 py-1 text-sm font-semibold text-grey-darker mr-2">#AWS</span>
+                  <span class="inline-block bg-grey-lighter rounded-full px-3 py-1 text-sm font-semibold text-grey-darker">#python</span>
                 </p>
+                
               </div>
+              <div class="absolute pin-x pin-b py-4 text-center">
+                <a class="text-red text-sm hover:text-blue-darker no-underline" href="https://www.storeed.me">Voir le site</a>
+              </div>
+            </div>
+
+            <div class="md:w-1/3m w-full bg-white">
             </div>
           </div>
 
