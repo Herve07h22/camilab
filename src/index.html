@@ -130,12 +130,14 @@
               <h1 class="my-4 font-bold text-5xl text-center text-grey-dark">Nous fabriquons les 
                 <span class="text-black">logiciels</span> de votre entreprise.</h1>
             </div>
-            <div class=" max-w-md lg:p-8 text-right w-full md:w-1/2"><img src="./assets/undraw_finance_0bdk.svg" alt="image" class="w-full animation-img"></div>
+            <div class=" max-w-md lg:p-8 text-right w-full md:w-1/2 animation-img">
+              <img src="./assets/undraw_finance_0bdk.svg" alt="image" class="w-full">
+            </div>
         </div>
         <div>
 
           <p class="leading-normal justify-center mb-4 px-2 text-justify">
-              <ul class="list-reset">
+              <ul class="list-reset mx-2">
                 <li class="text-xl mb-3"><i class="far fa-arrow-alt-circle-right mr-2"></i>Ils automatisent vos activités et vous font gagner du temps.</li>
                 <li class="text-xl mb-3"><i class="far fa-arrow-alt-circle-right mr-2"></i>Ils offrent des services innovants à vos clients et vous démarquent de vos concurrents.</li>
                 <li class="text-xl mb-3"><i class="far fa-arrow-alt-circle-right mr-2"></i>Ils gèrent vos données de façon sécurisée.</li>
@@ -217,7 +219,7 @@
     </div>
     
     <div class="flex flex-col">
-      <div class="flex flex-row justify-between w-full">
+      <div class="flex flex-row justify-between w-full flex-wrap">
         <div class="w-full md:w-1/2 flex flex-col items-start px-6 py-0 md:py-8 md:px-8 lg:items-start">  
         
               <p class="leading-tight mb-2 ">
@@ -241,7 +243,7 @@
         </div>
       </div>
 
-      <div class="flex flex-row justify-between w-full">
+      <div class="flex flex-row justify-between w-full flex-wrap">
         <div class="w-full md:w-1/2 flex flex-col items-start px-6 py-0 md:py-8 md:px-8 lg:items-start">  
         
           <p class="leading-tight mb-2 text-grey-dark">
@@ -267,7 +269,7 @@
         </div>
       </div>
 
-      <div class="flex flex-row justify-between w-full">
+      <div class="flex flex-row justify-between w-full flex-wrap">
         <div class="w-full md:w-1/2 flex flex-col items-start px-6 py-0 md:py-8 md:px-8 lg:items-start">  
           
           <p class="leading-tight mb-2 text-grey-dark">
@@ -300,7 +302,7 @@
       <p class="text-grey-dark mt-2 mb-6">
         Back-end, API, bases de données, applications mobiles, Python, Javascript, Vue et React.
         Firebase, AWS ... 
-        <br>Quelques exemples valent mieux qu'un long discours.
+        Quelques exemples valent mieux qu'un long discours.
       </p>
   </section>
 
@@ -470,19 +472,16 @@
           httpRequest.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
           httpRequest.send('userName=' + encodeURIComponent(userName) + '&phone=' + encodeURIComponent(phone));
           document.getElementById('popup').hidden=true
-        }
+        };
 
-        
-        (function() { var qs,js,q,s,d=document, gi=d.getElementById, ce=d.createElement, gt=d.getElementsByTagName, id="typef_orm_share", b="https://embed.typeform.com/"; if(!gi.call(d,id)){ js=ce.call(d,"script"); js.id=id; js.src=b+"embed.js"; q=gt.call(d,"script")[0]; q.parentNode.insertBefore(js,q) } })()
-
+        (function() { var qs,js,q,s,d=document, gi=d.getElementById, ce=d.createElement, gt=d.getElementsByTagName, id="typef_orm_share", b="https://embed.typeform.com/"; if(!gi.call(d,id)){ js=ce.call(d,"script"); js.id=id; js.src=b+"embed.js"; q=gt.call(d,"script")[0]; q.parentNode.insertBefore(js,q) } })();
 
         document.addEventListener("DOMContentLoaded", function(event) {
            
             const elementInViewport = function (el) {
-                var rect = el.getBoundingClientRect()
+                var rect = el.getBoundingClientRect();
                 return (
                 rect.top    >= 0
-                && rect.left   >= 0
                 && rect.top <= (window.innerHeight || document.documentElement.clientHeight)
                 )
             };
