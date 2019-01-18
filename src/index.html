@@ -27,35 +27,7 @@
     <meta property="og:description" content="Camilab est une agence qui accompagne le développement numérique des entreprises et les débuts des start-ups." />
     <meta property="og:image" content="https://camilab.co/assets/twitter_large.png" />
 
-    <!-- Matomo -->
-    <script type="text/javascript">
-      var _paq = _paq || [];
-      /* non prorogation des cookies : https://www.cnil.fr/sites/default/files/typo/document/Configuration_piwik.pdf */
-      _paq.push([function() {
-        var self = this;
-        function getOriginalVisitorCookieTimeout() {
-          var now = new Date(),
-          nowTs = Math.round(now.getTime() / 1000),
-          visitorInfo = self.getVisitorInfo();
-          var createTs = parseInt(visitorInfo[2]);
-          var cookieTimeout = 33696000; // 13 mois en secondes
-          var originalTimeout = createTs + cookieTimeout - nowTs;
-          return originalTimeout;
-        }
-        this.setVisitorCookieTimeout( getOriginalVisitorCookieTimeout() );
-      }]);
-      _paq.push(["setDomains", ["*.camilab.co"]]);
-      _paq.push(['trackPageView']);
-      _paq.push(['enableLinkTracking']);
-      (function() {
-        var u="//analytics.smsdialogue.com/piwik/";
-        _paq.push(['setTrackerUrl', u+'piwik.php']);
-        _paq.push(['setSiteId', '2']);
-        var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
-        g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
-      })();
-    </script>
-    <!-- End Matomo Code -->
+
 
     <!-- Animation style (nothing in tailwind css...) -->
     <style>
@@ -148,7 +120,7 @@
         
         <div class="flex flex-row items-center max-w-xl flex-wrap justify-center mt-8">
             <button onclick="getElementById('popup').hidden=false" class="bg-blue hover:bg-blue-dark text-white font-bold py-4 px-8 rounded m-2 text-xl">
-                Me rappeler
+                Vous rappeler
             </button>
 
             <a href="https://herverincent.typeform.com/to/KDhGdk" data-mode="popup" target="_blank" class="border border-blue hover:bg-blue-lighter text-grey-dark font-bold py-4 px-8 rounded m-2 text-xl no-underline">
@@ -379,20 +351,6 @@
             </div>
 
             <div class="animation-txt md:w-1/3m w-full bg-white rounded-lg border-grey-darker shadow my-8 px-4 py-2 transition-normal hover:transform-scale-subtle flex flex-col justify-between">
-              <img class="w-full" src="./assets/camilab-meteo.png" alt="Meteo screenshot">
-              
-                <h3 class="font-medium text-grey-darkest mb-4 leading-normal">La météo sur votre mobile, sans passer par le store, et qui fonctionne hors connexion</h3>
-                <p class="inline-flex items-center mb-4">
-                  <span class="inline-block bg-grey-lighter rounded-full px-3 py-1 text-sm font-semibold text-grey-darker mr-2">#VanillaJS</span>
-                  <span class="inline-block bg-grey-lighter rounded-full px-3 py-1 text-sm font-semibold text-grey-darker mr-2">#PWA</span>
-                </p>
-
-              <div class="py-4 text-center">
-                <a class="text-red text-sm hover:text-blue-darker no-underline" href="https://camilab-meteo.netlify.com">Voir le site sur votre mobile</a>
-              </div>    
-            </div>
-
-            <div class="animation-txt md:w-1/3m w-full bg-white rounded-lg border-grey-darker shadow my-8 px-4 py-2 transition-normal hover:transform-scale-subtle flex flex-col justify-between">
               <img class="w-full" src="./assets/mediumino.png" alt="Mediumino screenshot">
               
                 <h3 class="font-medium text-grey-darkest mb-4 leading-normal">Mediumino scrute chaque jour les articles publiés sur Medium.com en français</h3>
@@ -490,14 +448,14 @@
                 img_animation = Array.from(document.getElementsByClassName("animation-img"));
                 img_animation.map( function(el) {
                     if (elementInViewport(el)) {
-                        el.style = " visibility: visible; opacity: 1; transform: translate(0,0); transition: opacity 0.9s cubic-bezier(0.5, 0, 0, 1) 0.35s, transform 0.9s cubic-bezier(0.5, 0, 0, 1) 0.35s;"
+                        el.style = " visibility: visible; opacity: 1; transform: translate(0,0); transition: opacity 0.4s cubic-bezier(0.5, 0, 0, 1) 0.35s, transform 0.4s cubic-bezier(0.5, 0, 0, 1) 0.35s;"
                     }
                     
                 });
                 txt_animation = Array.from(document.getElementsByClassName("animation-txt"));
                 txt_animation.map( function(el) {
                     if (elementInViewport(el)) {
-                        el.style = " visibility: visible; opacity: 1; transform: translate(0,0); transition: opacity 1s cubic-bezier(0.5, 0, 0, 1) 0s, transform 1s cubic-bezier(0.5, 0, 0, 1) 0s;"
+                        el.style = " visibility: visible; opacity: 1; transform: translate(0,0); transition: opacity 0.4s cubic-bezier(0.5, 0, 0, 1) 0s, transform 0.4s cubic-bezier(0.5, 0, 0, 1) 0s;"
                     }
                 });
             }
@@ -512,6 +470,36 @@
         });
     
         
+      // -- Matomo -->
+    
+      var _paq = _paq || [];
+      /* non prorogation des cookies : https://www.cnil.fr/sites/default/files/typo/document/Configuration_piwik.pdf */
+      _paq.push([function() {
+        var self = this;
+        function getOriginalVisitorCookieTimeout() {
+          var now = new Date(),
+          nowTs = Math.round(now.getTime() / 1000),
+          visitorInfo = self.getVisitorInfo();
+          var createTs = parseInt(visitorInfo[2]);
+          var cookieTimeout = 33696000; // 13 mois en secondes
+          var originalTimeout = createTs + cookieTimeout - nowTs;
+          return originalTimeout;
+        }
+        this.setVisitorCookieTimeout( getOriginalVisitorCookieTimeout() );
+      }]);
+      _paq.push(["setDomains", ["*.camilab.co"]]);
+      _paq.push(['trackPageView']);
+      _paq.push(['enableLinkTracking']);
+      (function() {
+        var u="//analytics.smsdialogue.com/piwik/";
+        _paq.push(['setTrackerUrl', u+'piwik.php']);
+        _paq.push(['setSiteId', '2']);
+        var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+        g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
+      })();
+    
+    // -- End Matomo Code --
+
     
         </script>
   </body>
