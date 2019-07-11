@@ -130,7 +130,7 @@
         </div>
   </section>
 
-  <section class="font-sans bg-blue-lightest my-8 p-8 md:h-screen">
+  <section class="font-sans bg-blue-lightest my-8 p-8">
     <div class="container max-w-xl m-auto">
         <label for="tagline" class="uppercase tracking-wide text-grey-dark font-bold">
           Ce qui nous distingue
@@ -140,23 +140,23 @@
         Développeurs, Data scientists, Chefs de projet ou CTO : les métiers tech/data sont en pleine mutation. 
         Les talents sont difficiles à recruter, et la popularité du statut de freelance est grandissante.</p>
         <p class="animation-txt leading-normal mb-4 text-black text-justify font-semibold">Travailler avec un freelance présente plusieurs avantages : 
-        <ul class="animation-txt leading-normal mb-4 text-black text-justify ">
-          <li>Il travaille à la mission, cadrée par un devis. Le budget est maîtrisé. </li>
-          <li>Il peut être opérationnel rapidement parce qu'il adapte son rythme de travail à vos priorités.</li>
-          <li>C'est un entrepreneur. Il développe donc des qualités humaines complémentaires à ses compétences techniques : autonomie, organisation, sérénité, esprit d'initiative, courage. </li>
-          <li>Vous n'avez pas à lui fournir un bureau, ni de matériel. </li>
-          <li>Il coûte moins cher qu'un CDD, et vous économisez du temps en gestion et en paperasse.</li>
-          <li>Vous bénéficiez de son expérience acquise sur d'autres missions, et d'une vision externe à votre entreprise. Cela fait émerger des solutions simples que vous n'aviez pas encore envisagées.</li>
-          <li>Un freelance fait partie de nombreux réseaux, et il a l'esprit collaboratif. Il vous facilite le gréement de compétences supplémentaires.
+        <ul class="animation-txt leading-normal mb-8 text-black text-justify">
+          <li class="mb-1">Il travaille à la mission, cadrée par un devis. Le budget est maîtrisé. </li>
+          <li class="mb-1">Il peut être opérationnel rapidement parce qu'il adapte son rythme de travail à vos priorités.</li>
+          <li class="mb-1">C'est un entrepreneur. Il développe donc des qualités humaines complémentaires à ses compétences techniques : autonomie, organisation, sérénité, esprit d'initiative, courage. </li>
+          <li class="mb-1">Vous n'avez pas à lui fournir un bureau, ni de matériel. </li>
+          <li class="mb-1">Il coûte moins cher qu'un CDD, et vous économisez du temps en gestion et en paperasse.</li>
+          <li class="mb-1">Vous bénéficiez de son expérience acquise sur d'autres missions, et d'une vision externe à votre entreprise. Cela fait émerger des solutions simples que vous n'aviez pas encore envisagées.</li>
+          <li class="mb-1">Un freelance fait partie de nombreux réseaux, et il a l'esprit collaboratif. Il vous facilite le gréement de compétences supplémentaires.
              Vous pouvez constituer rapidement une équipe projet pour faire face à des délais serrés. </li>
-          <li>Vous établissez un lien de confiance, avec une personnalité. 
+          <li class="mb-1">Vous établissez un lien de confiance, avec une personnalité. 
             Contrairement à une structure géante et anonyme pour laquelle vous êtes un numéro de client parmi d'autres, 
             vous tissez un lien plus personnel avec le freelance. </li>
         </ul>  
           
         </p>
-        <div class="animation-txt">
-          <h1 class="my-4 font-medium">Parlons de votre projet</h1>
+        <div class="animation-txt mt-8">
+          <h1 class="mb-4 font-medium">Parlons de votre projet</h1>
           <p class="leading-normal mb-4 text-black text-justify">
             Toutes les missions débutent par un entretien. 
             Nous prendrons ensemble le temps nécessaire à la bonne compréhension du besoin, avant d'établir un devis détaillé.
@@ -468,38 +468,6 @@
     
             });
         });
-    
-        
-      // -- Matomo -->
-    
-      var _paq = _paq || [];
-      /* non prorogation des cookies : https://www.cnil.fr/sites/default/files/typo/document/Configuration_piwik.pdf */
-      _paq.push([function() {
-        var self = this;
-        function getOriginalVisitorCookieTimeout() {
-          var now = new Date(),
-          nowTs = Math.round(now.getTime() / 1000),
-          visitorInfo = self.getVisitorInfo();
-          var createTs = parseInt(visitorInfo[2]);
-          var cookieTimeout = 33696000; // 13 mois en secondes
-          var originalTimeout = createTs + cookieTimeout - nowTs;
-          return originalTimeout;
-        }
-        this.setVisitorCookieTimeout( getOriginalVisitorCookieTimeout() );
-      }]);
-      _paq.push(["setDomains", ["*.camilab.co"]]);
-      _paq.push(['trackPageView']);
-      _paq.push(['enableLinkTracking']);
-      (function() {
-        var u="//analytics.smsdialogue.com/piwik/";
-        _paq.push(['setTrackerUrl', u+'piwik.php']);
-        _paq.push(['setSiteId', '2']);
-        var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
-        g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
-      })();
-    
-    // -- End Matomo Code --
-
     
         </script>
   </body>
