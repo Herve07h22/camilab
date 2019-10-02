@@ -47,49 +47,6 @@
 
   </head>
   <body>
-  
-      <section id="popup" hidden>
-          <div class="fixed pin h-screen w-full flex flex-col items-center justify-center font-sans z-10">
-            <div class="h-screen w-full absolute flex items-center justify-center bg-grey-lighter overflow-auto ">
-                  <div class="bg-white rounded shadow p-8 m-4 max-w-sm max-h-full text-center ">
-                
-                      <div class="mb-8">
-                          <p class="text-xl leading-normal mb-8 text-justify">
-                            Indiquez vos coordonnées ci-dessous et je vous rappelle dès que possible
-                          </p>
-                    
-                    <span class="absolute pin-t pin-b pin-r px-4 py-3" onclick="getElementById('popup').hidden=true">
-                      <svg class="fill-current h-6 w-6 text-black" role="button" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
-                      <title>Fermer</title>
-                      <path d="M14.348 14.849a1.2 1.2 0 0 1-1.697 0L10 11.819l-2.651 3.029a1.2 1.2 0 1 1-1.697-1.697l2.758-3.15-2.759-3.152a1.2 1.2 0 1 1 1.697-1.697L10 8.183l2.651-3.031a1.2 1.2 0 1 1 1.697 1.697l-2.758 3.152 2.758 3.15a1.2 1.2 0 0 1 0 1.698z"/></svg>
-                    </span>
-
-                    <form class="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4">
-                        <div class="mb-4">
-                          <label class="block text-grey-darker text-sm font-bold mb-2" for="nom">
-                           Votre nom
-                          </label>
-                          <input class="shadow appearance-none border rounded w-full py-2 px-3 text-grey-darker leading-tight focus:outline-none focus:shadow-outline" id="username" type="text" placeholder="Votre nom">
-                        </div>
-                        <div class="mb-6">
-                          <label class="block text-grey-darker text-sm font-bold mb-2" for="numéro">
-                            Téléphone
-                          </label>
-                          <input class="shadow appearance-none border rounded w-full py-2 px-3 text-grey-darker leading-tight focus:outline-none focus:shadow-outline" id="phone" type="text" placeholder="06.xx.xx.xx.xx">
-                        </div>
-                        <div class="flex items-center justify-between">
-                          <button onclick="callmeback()" class="bg-blue hover:bg-blue-dark text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline" type="button">
-                            Me rappeler
-                          </button>
-                        </div>
-                      </form>
-
-                  </div>
-              </div>
-          </div>
-      </section>
-      
-      
 
   <section class="container m-auto bg-white font-sans md:h-screen flex flex-col items-center justify-around">
       <!-- nav class="font-sans bg-white text-center flex justify-between my-4 mx-auto container overflow-hidden"-->
@@ -110,18 +67,18 @@
 
           <p class="leading-normal justify-center mb-4 px-2 text-justify">
               <ul class="list-reset mx-2">
-                <li class="text-xl mb-3"><i class="far fa-arrow-alt-circle-right mr-2"></i>Ils automatisent vos activités et vous font gagner du temps.</li>
-                <li class="text-xl mb-3"><i class="far fa-arrow-alt-circle-right mr-2"></i>Ils offrent des services innovants à vos clients et vous démarquent de vos concurrents.</li>
-                <li class="text-xl mb-3"><i class="far fa-arrow-alt-circle-right mr-2"></i>Ils gèrent vos données de façon sécurisée.</li>
+                <li class="text-xl mb-4"><i class="far fa-arrow-alt-circle-right mr-2"></i>Ils automatisent vos activités et vous font gagner du temps.</li>
+                <li class="text-xl mb-4"><i class="far fa-arrow-alt-circle-right mr-2"></i>Ils vous démarquent de vos concurrents grâce à des services plus innovants.</li>
+                <li class="text-xl mb-4"><i class="far fa-arrow-alt-circle-right mr-2"></i>Ils gèrent vos données de façon sécurisée.</li>
 
               </ul> 
             </p>
         </div>
         
         <div class="flex flex-row items-center max-w-xl flex-wrap justify-center mt-8">
-            <button onclick="getElementById('popup').hidden=false" class="bg-blue hover:bg-blue-dark text-white font-bold py-4 px-8 rounded m-2 text-xl">
-                Vous rappeler
-            </button>
+            <a href="#contact" class="bg-blue hover:bg-blue-dark text-white font-bold py-4 px-8 rounded m-2 text-xl no-underline">
+                Nous contacter
+            </a>
 
             <a href="https://herverincent.typeform.com/to/KDhGdk" data-mode="popup" target="_blank" class="border border-blue hover:bg-blue-lighter text-grey-dark font-bold py-4 px-8 rounded m-2 text-xl no-underline">
                 Soumettre un projet
@@ -130,152 +87,107 @@
         </div>
   </section>
 
-  <section class="font-sans bg-blue-lightest my-8 p-8">
-    <div class="container max-w-xl m-auto">
-        <label for="tagline" class="uppercase tracking-wide text-grey-dark font-bold">
-          Ce qui nous distingue
-        </label>
-        <h1 class="mt-2 mb-4 font-medium">Bénéficiez des avantages de travailler avec un freelance.</h1>
-        <p class="leading-normal mb-4 text-black text-justify">
-        Développeurs, Data scientists, Chefs de projet ou CTO : les métiers tech/data sont en pleine mutation. 
-        Les talents sont difficiles à recruter, et la popularité du statut de freelance est grandissante.</p>
-        <p class="animation-txt leading-normal mb-4 text-black text-justify font-semibold">Travailler avec un freelance présente plusieurs avantages : 
-        <ul class="animation-txt leading-normal mb-8 text-black text-justify">
-          <li class="mb-1">Il travaille à la mission, cadrée par un devis. Le budget est maîtrisé. </li>
-          <li class="mb-1">Il peut être opérationnel rapidement parce qu'il adapte son rythme de travail à vos priorités.</li>
-          <li class="mb-1">C'est un entrepreneur. Il développe donc des qualités humaines complémentaires à ses compétences techniques : autonomie, organisation, sérénité, esprit d'initiative, courage. </li>
-          <li class="mb-1">Vous n'avez pas à lui fournir un bureau, ni de matériel. </li>
-          <li class="mb-1">Il coûte moins cher qu'un CDD, et vous économisez du temps en gestion et en paperasse.</li>
-          <li class="mb-1">Vous bénéficiez de son expérience acquise sur d'autres missions, et d'une vision externe à votre entreprise. Cela fait émerger des solutions simples que vous n'aviez pas encore envisagées.</li>
-          <li class="mb-1">Un freelance fait partie de nombreux réseaux, et il a l'esprit collaboratif. Il vous facilite le gréement de compétences supplémentaires.
-             Vous pouvez constituer rapidement une équipe projet pour faire face à des délais serrés. </li>
-          <li class="mb-1">Vous établissez un lien de confiance, avec une personnalité. 
-            Contrairement à une structure géante et anonyme pour laquelle vous êtes un numéro de client parmi d'autres, 
-            vous tissez un lien plus personnel avec le freelance. </li>
-        </ul>  
+  <section class="font-sans bg-grey-lighter my-8 px-8 py-8 h-64">
+      <div class="container max-w-xl m-auto">
+          <label for="tagline" class="uppercase tracking-wide text-grey-dark font-bold mt-8 ">Notre méthode</label>
+          <h1 class="mt-2 mb-4 font-medium">Performance, agilité, transparence, qualité.</h1>
+          <p class="leading-normal mb-4 text-justify">
+              Internet déborde de développeurs et de chefs de projets freelance. 
+              Ce qui nous distingue des autres ?</p> 
+        </div>
+  </section>
+  
+  <section class="font-sans my-8 p-8">
+    <div class="container max-w-xl m-auto flex flex-col bg-white" style="margin-top:-10rem">
+      <div class="flex flex-col">
+        <div class="flex flex-row justify-between w-full flex-wrap">
+          <div class="w-full md:w-1/2 flex flex-col items-start px-6 py-0 md:py-8 md:px-8 lg:items-start">  
           
-        </p>
-        <div class="animation-txt mt-8">
-          <h1 class="mb-4 font-medium">Parlons de votre projet</h1>
-          <p class="leading-normal mb-4 text-black text-justify">
-            Toutes les missions débutent par un entretien. 
-            Nous prendrons ensemble le temps nécessaire à la bonne compréhension du besoin, avant d'établir un devis détaillé.
-          </p>
+                <p class="leading-tight mb-2 ">
+                  <h2 class="text-blue-darker  mb-2"><i class="fas fa-user-astronaut text-blue-darker"></i> 
+                  Comprendre avant de vendre !</h2> 
+                  Un logiciel métier bien construit démarre par une appropriation des activités de votre entreprise, 
+                  et des attentes des utilisateurs. 
+                </p>
+              
+          </div>
 
-          <div class="flex flex-row items-center max-w-xl flex-wrap justify-center mt-8">
-              <button onclick="getElementById('popup').hidden=false" class="bg-blue hover:bg-blue-dark text-white font-bold py-4 px-8 rounded m-2 text-xl">
-                  Vous rappeler
-              </button>
-
-              <a href="https://herverincent.typeform.com/to/KDhGdk" data-mode="popup" target="_blank" class="border border-blue hover:bg-blue-lighter text-grey-dark font-bold py-4 px-8 rounded m-2 text-xl no-underline">
-                Soumettre un projet
-                
-            </a>
+          <div class="w-full md:w-1/2 flex flex-col items-start px-6 py-0 md:py-8 md:px-8 lg:items-start">
+            
+            <p class="leading-tight mb-2">
+                <h2 class="text-blue-darker  mb-2"><i class="far fa-comments text-blue-darker"></i>
+              La recommandation est le meilleur outil marketing.</h2> 
+              Des prestations d'excellente qualité débouchent sur des partenariats durables et permettent de travailler avec de nouveaux clients.               
+            </p>
 
           </div>
         </div>
-        
-    </div>
-  </section>
 
-
-
-  <section class="my-8 p-8 font-sans container max-w-xl m-auto flex flex-col ">
-    <div>
-      <label for="tagline" class="uppercase tracking-wide text-grey-dark font-bold mt-8 ">Notre méthode</label>
-      <h1 class="mt-2 mb-4 font-medium">Performance, agilité, transparence, qualité.</h1>
-       <p class="leading-normal mb-4 text-justify">
-          Internet déborde de développeurs et de chefs de projets freelance. 
-          Ce qui me distingue des autres ?</p> 
+        <div class="flex flex-row justify-between w-full flex-wrap">
+          <div class="w-full md:w-1/2 flex flex-col items-start px-6 py-0 md:py-8 md:px-8 lg:items-start">  
           
-    </div>
-    
-    <div class="flex flex-col">
-      <div class="flex flex-row justify-between w-full flex-wrap">
-        <div class="w-full md:w-1/2 flex flex-col items-start px-6 py-0 md:py-8 md:px-8 lg:items-start">  
+            <p class="leading-tight mb-2 text-grey-dark">
+              <h2 class="text-blue-darker  mb-2"><i class="far fa-sticky-note text-blue-darker"></i>
+                Clarté du devis, fermeté des prix.</h2> 
+              Nos devis sont détaillés et explicites sur les livrables.
+              Tout est clair dès le début, vous savez ou vous allez.
+            </p>
+          </div>
         
-              <p class="leading-tight mb-2 ">
-                <h2 class="text-blue-darker  mb-2"><i class="fas fa-user-astronaut text-blue-darker"></i> 
-                Comprendre avant de vendre !</h2> 
-                
-                Un logiciel métier bien construit démarre par une appropriation des activités de votre entreprise, 
-                et des attentes des utilisateurs. 
-              </p>
+
+          <div class="w-full md:w-1/2 flex flex-col items-start px-6 py-0 md:py-8 md:px-8 lg:items-start">
             
+            <p class="leading-tight mb-2 text-grey-dark">
+                <h2 class="text-blue-darker  mb-2">
+                    <i class="fab fa-pagelines text-blue-darker"></i>
+              L'expérience professionnelle</h2> 
+              Nous travaillons avec un réseau de freelances dotés d'une sérieuse expérience.
+              Cela facilite l'analyse de votre besoin et réduit les temps de développement.                
+            </p>
+
+          </div>
         </div>
 
-        <div class="w-full md:w-1/2 flex flex-col items-start px-6 py-0 md:py-8 md:px-8 lg:items-start">
+        <div class="flex flex-row justify-between w-full flex-wrap">
+          <div class="w-full md:w-1/2 flex flex-col items-start px-6 py-0 md:py-8 md:px-8 lg:items-start">  
+            
+            <p class="leading-tight mb-2 text-grey-dark">
+                <h2 class="text-blue-darker  mb-2"><i class="far fa-handshake text-blue-darker"></i>
+              La confiance avant tout.</h2>
+              Les missions font toujours l'objet d'un reporting régulier et d'une complète transparence sur les choix techniques. 
+              Les premières versions sont livrées très tôt pour construire ensemble le produit final qui correspond à vos attentes.          
+            </p>
           
-          <p class="leading-tight mb-2">
-              <h2 class="text-blue-darker  mb-2"><i class="far fa-comments text-blue-darker"></i>
-            La recommandation est mon seul outil marketing.</h2> 
-            Des prestations d'excellente qualité débouchent sur des partenariats durables et permettent de travailler avec de nouveaux clients.               
-          </p>
+          </div>
 
-        </div>
-      </div>
-
-      <div class="flex flex-row justify-between w-full flex-wrap">
-        <div class="w-full md:w-1/2 flex flex-col items-start px-6 py-0 md:py-8 md:px-8 lg:items-start">  
-        
-          <p class="leading-tight mb-2 text-grey-dark">
-            <h2 class="text-blue-darker  mb-2"><i class="far fa-sticky-note text-blue-darker"></i>
-              Clarté du devis, fermeté des prix.</h2> 
-            Mes devis sont détaillés et explicites sur les livrables.
-            Tout est clair dès le début, vous savez ou vous allez.
-          </p>
-        </div>
-      
-
-        <div class="w-full md:w-1/2 flex flex-col items-start px-6 py-0 md:py-8 md:px-8 lg:items-start">
-          
-          <p class="leading-tight mb-2 text-grey-dark">
-              <h2 class="text-blue-darker  mb-2">
-                  <i class="fab fa-pagelines text-blue-darker"></i>
-            L'expérience professionnelle</h2> 
-            Une vingtaine d'années dans un grand groupe m'ont permis d'apprendre 
-            les métiers de la R&D, du pilotage de projet, et du management.
-            Cela facilite l'analyse de votre besoin et réduit les temps de développement.                
-          </p>
-
-        </div>
-      </div>
-
-      <div class="flex flex-row justify-between w-full flex-wrap">
-        <div class="w-full md:w-1/2 flex flex-col items-start px-6 py-0 md:py-8 md:px-8 lg:items-start">  
-          
-          <p class="leading-tight mb-2 text-grey-dark">
-              <h2 class="text-blue-darker  mb-2"><i class="far fa-handshake text-blue-darker"></i>
-            La confiance avant tout.</h2>
-            Les missions font toujours l'objet d'un reporting régulier et d'une complète transparence sur les choix techniques. 
-            Si nécessaire, je dispose de modèles d'accords de confidentialité prêts à l'emploi.          
-          </p>
-        
-        </div>
-
-        <div class="w-full md:w-1/2 flex flex-col items-start px-6 py-0 md:py-8 md:px-8 lg:items-start">
-          <p class="leading-tight mb-2 text-grey-dark">
-              <h2 class="text-blue-darker  mb-2">
-                  <i class="fas fa-code-branch text-blue-darker"></i>
-            Astuce et réutilisation.</h2> 
-            Inutile de refacturer ce qui est déjà (bien) fait. 
-            Nous avons un goût prononcé pour l'utilisation astucieuse de ce qui fait déjà référence. 
-                        
-          </p>
+          <div class="w-full md:w-1/2 flex flex-col items-start px-6 py-0 md:py-8 md:px-8 lg:items-start">
+            <p class="leading-tight mb-2 text-grey-dark">
+                <h2 class="text-blue-darker  mb-2">
+                    <i class="fas fa-code-branch text-blue-darker"></i>
+              Astuce et réutilisation.</h2> 
+              Inutile de refacturer ce qui est déjà (bien) fait. 
+              Nous avons un goût prononcé pour l'utilisation astucieuse de ce qui fait déjà référence. 
+                          
+            </p>
+          </div>
         </div>
       </div>
     </div>
 
-
   </section>
-    
-  <section class="font-sans bg-grey-lighter text-center my-8 px-8 py-8 h-64">
-      <h1 class="font-medium">Nos compétences</h1>
-      <p class="text-grey-dark mt-2 mb-6">
-        Back-end, API, bases de données, applications mobiles, Python, Javascript, Vue et React.
-        Firebase, AWS ... 
-        Quelques exemples valent mieux qu'un long discours.
-      </p>
+  
+  <section class="font-sans bg-grey-lighter my-8 px-8 py-8 h-64">
+      <div class="container max-w-xl m-auto">
+  
+          <label for="tagline" class="uppercase tracking-wide text-grey-dark font-bold mt-8 ">Nos compétences</label>
+          <h1 class="mt-2 mb-4 font-medium">Développement full-stack</h1>
+
+          <p class="leading-normal mb-4 text-justify">
+              React, NodeJS, Elasticsearc, Docker, Python, Postgresql. 
+          </p> 
+              
+        </div>
+
   </section>
 
   <section class="my-8 font-sans container max-w-xl m-auto flex flex-col ">
@@ -284,106 +196,160 @@
 
         <div class="container max-w-xl m-auto flex flex-wrap flex-row items-stretch justify-between" style="margin-top:-10rem">
 
-            <div class="animation-txt md:w-1/3m w-full bg-white rounded-lg border-grey-darker shadow my-8 px-4 py-2 transition-normal hover:transform-scale-subtle flex flex-col justify-between">
+            <div class="animation-txt md:w-1/2m w-full bg-white rounded-lg border-grey-darker shadow my-8 px-4 py-2 transition-normal hover:transform-scale-subtle flex flex-col justify-between">
               <div>
-                <img class="w-full" src="./assets/maboutiqueenligne-screenshot.png" alt="Eboutique screenshot">
+                <img class="w-full" src="./assets/LeadsB2B.png" alt="Lead management screenshot">
               </div>
               
-                <h3 class="font-medium text-grey-darkest mb-4 leading-normal">Ajoutez un bouton "achetez" dans votre boutique Facebook</h3>
-                <p class="inline-flex items-center mb-4">
+                <h3 class="font-medium  my-4 leading-normal text-xl">Un outil SaaS de commercialisation de leads</h3>
+                <p class="inline-flex items-center mb-4 flex-wrap">
                     
-                        <span class="inline-block bg-grey-lighter rounded-full px-3 py-1 text-sm font-semibold text-grey-darker mr-2">#python</span>
-                        <span class="inline-block bg-grey-lighter rounded-full px-3 py-1 text-sm font-semibold text-grey-darker mr-2">#AWS</span>
-                        <span class="inline-block bg-grey-lighter rounded-full px-3 py-1 text-sm font-semibold text-grey-darker">#jQuery</span>
+                        <span class="inline-block bg-grey-lighter rounded-full px-3 py-1 text-sm font-semibold text-grey-darker mr-2 mb-2">NodeJS</span>
+                        <span class="inline-block bg-grey-lighter rounded-full px-3 py-1 text-sm font-semibold text-grey-darker mr-2 mb-2">React</span>
+                        <span class="inline-block bg-grey-lighter rounded-full px-3 py-1 text-sm font-semibold text-grey-darker mr-2 mb-2">Postgresql</span>
+                        <span class="inline-block bg-grey-lighter rounded-full px-3 py-1 text-sm font-semibold text-grey-darker mr-2 mb-2">Web Push</span>
+                        <span class="inline-block bg-grey-lighter rounded-full px-3 py-1 text-sm font-semibold text-grey-darker mr-2 mb-2">Mailgun</span>
+                        <span class="inline-block bg-grey-lighter rounded-full px-3 py-1 text-sm font-semibold text-grey-darker mr-2 mb-2">Stripe</span>
                 </p>
                 
-              <div class="py-4 text-center">    
-                  <a class="text-red text-sm hover:text-blue-darker no-underline" href="https://www.maboutiqueenligne.co/">Voir le site</a>
+              <div class="font-medium text-grey-darkest text-sm text-justify py-2">    
+                  <p class="mb-1">David exploite plusieurs sites internet à fort trafic sur la Suisse et la Belgique. Il propose aux particuliers 
+                    un service de mise en relation avec des entreprises locales pour des prestations d'entretiens, de travaux ou de déménagement.</p>
+                    <p>Nous avons codé un outil SaaS à destination des entreprises pour contacter des clients et leur proposer un devis en ligne. 
+                      les entreprises sont informées en temps-réel des nouvelles opportunités par mail et notification push.
+                    </p>
               </div>    
             </div>
 
-            <div class="animation-txt md:w-1/3m w-full bg-white rounded-lg border-grey-darker shadow my-8 px-4 py-2 transition-normal hover:transform-scale-subtle flex flex-col justify-between">
-              <img class="w-full " src="./assets/tuktuk.png" alt="Tuktuk application mobile screenshot">
-
-                <h3 class="font-medium text-grey-darkest mb-4 leading-normal">Localisez le taxi triporteur le plus proche sur votre mobile</h3>
-                <p class="inline-flex items-center mb-4">
-                    <span class="inline-block bg-grey-lighter rounded-full px-3 py-1 text-sm font-semibold text-grey-darker mr-2">#onsenUI</span>
-                    <span class="inline-block bg-grey-lighter rounded-full px-3 py-1 text-sm font-semibold text-grey-darker mr-2">#Firebase</span>
-                    <span class="inline-block bg-grey-lighter rounded-full px-3 py-1 text-sm font-semibold text-grey-darker">#jQuery</span>
-                </p>
-
-              <div class="py-4 text-center"></p>    
-                  <a class="text-red text-sm hover:text-blue-darker no-underline" href="https://tuktuk-cherbourg.fr/">Voir le site sur votre mobile</a>
-              </div>    
-            </div>
-
-            <div class="animation-txt md:w-1/3m w-full bg-white rounded-lg border-grey-darker shadow my-8 px-4 py-2 transition-normal hover:transform-scale-subtle flex flex-col justify-between">
-              <img class="w-full " src="./assets/tinyssg.png" alt="Free open source ssg">
-
-                <h3 class="font-medium text-grey-darkest mb-4 leading-normal">Tiny SSG construit automatiquement un site statique 
-                  comportant 300 photos en 6 secondes</h3>
-               <p class="inline-flex items-center mb-4">
-                      <span class="inline-block bg-grey-lighter rounded-full px-3 py-1 text-sm font-semibold text-grey-darker mr-2">#python</span>
-                      <span class="inline-block bg-grey-lighter rounded-full px-3 py-1 text-sm font-semibold text-grey-darker mr-2">#JAMStack</span>
-                      <span class="inline-block bg-grey-lighter rounded-full px-3 py-1 text-sm font-semibold text-grey-darker">#netlify</span>
-                  </p>    
-
-              <div class="py-4 text-center">
-                  
-                  <a class="text-red text-sm hover:text-blue-darker no-underline" href="https://github.com/Herve07h22/tinySSG">Voir le git</a>
-              </div>    
-            </div>
-
-            <div class="animation-txt md:w-1/3m w-full bg-white rounded-lg border-grey-darker shadow my-8 px-4 py-2 transition-normal hover:transform-scale-subtle flex flex-col justify-between">
-              <img class="w-full" src="./assets/jonjon.png" alt="Eboutique screenshot">
+            <div class="animation-txt md:w-1/2m w-full bg-white rounded-lg border-grey-darker shadow my-8 px-4 py-2 transition-normal hover:transform-scale-subtle flex flex-col justify-between">
+              <div>
+                <img class="w-full" src="./assets/portail.png" alt="Document and training webapp screenshot">
+              </div>
               
-                <h3 class="font-medium text-grey-darkest mb-4 leading-normal">VuePress revisité en site de e-commerce.</h3>
-                <p class="inline-flex items-center mb-4">
+                <h3 class="font-medium  my-4 leading-normal text-xl">Un portail interne de GED et de formation</h3>
+                <p class="inline-flex items-center mb-4 flex-wrap">
                     
-                        <span class="inline-block bg-grey-lighter rounded-full px-3 py-1 text-sm font-semibold text-grey-darker mr-2">#VueJS</span>
-                        <span class="inline-block bg-grey-lighter rounded-full px-3 py-1 text-sm font-semibold text-grey-darker mr-2">#JAMStack</span>
-                        <span class="inline-block bg-grey-lighter rounded-full px-3 py-1 text-sm font-semibold text-grey-darker">#netlify</span>
+                        <span class="inline-block bg-grey-lighter rounded-full px-3 py-1 text-sm font-semibold text-grey-darker mr-2 mb-2">Python</span>
+                        <span class="inline-block bg-grey-lighter rounded-full px-3 py-1 text-sm font-semibold text-grey-darker mr-2 mb-2">React</span>
+                        <span class="inline-block bg-grey-lighter rounded-full px-3 py-1 text-sm font-semibold text-grey-darker mr-2 mb-2">Postgresql</span>
+                        <span class="inline-block bg-grey-lighter rounded-full px-3 py-1 text-sm font-semibold text-grey-darker mr-2 mb-2">Docker</span>
+                        <span class="inline-block bg-grey-lighter rounded-full px-3 py-1 text-sm font-semibold text-grey-darker mr-2 mb-2">Samba</span>
                 </p>
                 
-              <div class="py-4 text-center">        
-                  <a class="text-red text-sm hover:text-blue-darker no-underline" href="https://jonjon.netlify.com">Voir le site</a>
+              <div class="font-medium text-grey-darkest text-sm text-justify py-2">    
+                  <p class="mb-1">Christelle dirige le service administratif et ressources humaines d'un grand groupe de distribution automobile.
+                    Ses équipes élaborent les procédures, formulaires et reporting pour tous les employés du groupe. 
+                  </p>
+                    <p>Elle nous a confié la réalisation d'une application web qui facilite l'accès aux fichiers nécessaires selon le profil de chaque employé.
+                      L'outil permet également le pilotage des plans de professionnalisation par les managers d'équipes.
+                    </p>
               </div>    
             </div>
 
-            <div class="animation-txt md:w-1/3m w-full bg-white rounded-lg border-grey-darker shadow my-8 px-4 py-2 transition-normal hover:transform-scale-subtle flex flex-col justify-between">
-              <img class="w-full" src="./assets/mediumino.png" alt="Mediumino screenshot">
+            <div class="animation-txt md:w-1/2m w-full bg-white rounded-lg border-grey-darker shadow my-8 px-4 py-2 transition-normal hover:transform-scale-subtle flex flex-col justify-between">
+              <div>
+                <img id="synaeptique" class="w-full" src="./assets/synaeptique.png" alt="Requirement management screenshot" >
+              </div>
               
-                <h3 class="font-medium text-grey-darkest mb-4 leading-normal">Mediumino scrute chaque jour les articles publiés sur Medium.com en français</h3>
-                <p class="inline-flex items-center mb-4">
-                  <span class="inline-block bg-grey-lighter rounded-full px-3 py-1 text-sm font-semibold text-grey-darker mr-2">#python</span>
-                  <span class="inline-block bg-grey-lighter rounded-full px-3 py-1 text-sm font-semibold text-grey-darker mr-2">#scrapy</span>
-                  <span class="inline-block bg-grey-lighter rounded-full px-3 py-1 text-sm font-semibold text-grey-darker">#netlify</span>
+                <h3 class="font-medium  my-4 leading-normal text-xl">Un synoptique interactif en VueJS</h3>
+                <p class="inline-flex items-center mb-4 flex-wrap">
+                        <span class="inline-block bg-grey-lighter rounded-full px-3 py-1 text-sm font-semibold text-grey-darker mr-2 mb-2">VueJS</span>
+                        <span class="inline-block bg-grey-lighter rounded-full px-3 py-1 text-sm font-semibold text-grey-darker mr-2 mb-2">Javascript</span>
+                        <span class="inline-block bg-grey-lighter rounded-full px-3 py-1 text-sm font-semibold text-grey-darker mr-2 mb-2">Netlify</span>
                 </p>
                 
-              
-              <div class="py-4 text-center">
-                <a class="text-red text-sm hover:text-blue-darker no-underline" href="https://mediumino.fr">Voir le site</a>
-              </div>
+              <div class="font-medium text-grey-darkest text-sm text-justify py-2">    
+                  <p class="mb-1">Luc et Julien ont lancé une start-up proposant une démarche innovante pour élaborer un cahier des charges. 
+                    L'objectif est d'offrir une expérience utilisateur qui tranche radicalement avec la rédaction traditionnelle d'un "pavé" documentaire.  
+                  </p>
+                    <p>Nous avons codé le synoptique interactif qui présente le graphe des exigences. 
+                      Livré sous forme de composant modulaire, l'enjeu était de l'intégrer dans l'outil SaaS en cours de développement en le connectant au backend.
+                    </p>
+              </div>    
             </div>
 
-            <div class="animation-txt md:w-1/3m w-full bg-white rounded-lg border-grey-darker shadow my-8 px-4 py-2 transition-normal hover:transform-scale-subtle flex flex-col justify-between">
-              <img class="w-full" src="./assets/storeed.png" alt="Storeed screenshot">
+            <div class="animation-txt md:w-1/2m w-full bg-white rounded-lg border-grey-darker shadow my-8 px-4 py-2 transition-normal hover:transform-scale-subtle flex flex-col justify-between">
+              <div>
+                <img class="w-full" src="./assets/kibana.png" alt="Tuktuk application mobile screenshot" >
+              </div>
               
-                <h3 class="font-medium text-grey-darkest mb-4 leading-normal">Storeed transforme votre fil tweeter en blog personnel</h3>
-                <p class="inline-flex items-center mb-4">
-                  <span class="inline-block bg-grey-lighter rounded-full px-3 py-1 text-sm font-semibold text-grey-darker mr-2">#VueJS</span>
-                  <span class="inline-block bg-grey-lighter rounded-full px-3 py-1 text-sm font-semibold text-grey-darker mr-2">#AWS</span>
-                  <span class="inline-block bg-grey-lighter rounded-full px-3 py-1 text-sm font-semibold text-grey-darker">#python</span>
+                <h3 class="font-medium  my-4 leading-normal text-xl">Explorer ses données avec ElasticSearch</h3>
+                <p class="inline-flex items-center mb-4 flex-wrap">
+                        <span class="inline-block bg-grey-lighter rounded-full px-3 py-1 text-sm font-semibold text-grey-darker mr-2 mb-2">elasticsearch</span>
+                        <span class="inline-block bg-grey-lighter rounded-full px-3 py-1 text-sm font-semibold text-grey-darker mr-2 mb-2">python</span>
+                        <span class="inline-block bg-grey-lighter rounded-full px-3 py-1 text-sm font-semibold text-grey-darker mr-2 mb-2">logstash</span>
                 </p>
                 
-              
-              <div class="py-4 text-center">
-                <a class="text-red text-sm hover:text-blue-darker no-underline" href="https://www.storeed.me">Voir le site</a>
-              </div>
+              <div class="font-medium text-grey-darkest text-sm text-justify py-2">    
+                  <p class="mb-1">Carine est responsable du département Marketing d'un grand groupe, qui communique et interagit avec ses clients au travers
+                    de plusieurs sites thématiques. Des millions de données étaient produites chaque jour sur les serveurs hébergeant les sites, 
+                    mais elles n'étaient pas utilisables.   
+                  </p>
+                    <p>Nous avons conçu et mis en production un outil d'analyse de l'audience des sites en exploitant les fichiers de logs détaillés.
+                      Des tableaux de bords synthétisent les données et mesurent l'impact des campagnes lancées sur les réseaux sociaux.    
+                    </p>
+              </div>    
             </div>
 
+
+    </section>
+
+    <section id="contact" class="font-sans bg-grey-lighter text-center my-8 px-8 py-8 h-64">
+        <h1 class="font-medium">Nous contacter</h1>
+    </section>
+  
+    <section class="my-8 font-sans container max-w-xl m-auto flex flex-col" style="margin-top:-10rem">
+
+      <div class="container max-w-xl m-auto flex flex-wrap flex-row items-stretch justify-between" >
+        <div class="md:w-1/2">
+          <form class="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4 md:mr-2">
+            <div class="mb-4">
+              <label class="block text-grey-darker text-sm font-bold mb-2" for="nom">
+              Votre nom
+              </label>
+              <input class="shadow appearance-none border rounded w-full py-2 px-3 text-grey-darker leading-tight focus:outline-none focus:shadow-outline" id="nom" type="text" >
+            </div>
+            
+            <div class="mb-6">
+              <label class="block text-grey-darker text-sm font-bold mb-2" for="email">
+                Votre email
+              </label>
+              <input class="shadow appearance-none border rounded w-full py-2 px-3 text-grey-darker leading-tight focus:outline-none focus:shadow-outline" id="email" type="email" >
+            </div>
+
+            <div class="mb-6">
+              <label class="block text-grey-darker text-sm font-bold mb-2" for="message">
+                Votre message
+              </label>
+              <textarea rows="3" class="shadow appearance-none border rounded w-full py-2 px-3 text-grey-darker leading-tight focus:outline-none focus:shadow-outline" id="message" ></textarea>
+            </div>
+
+            <div class="flex items-center justify-between">
+              <button onclick="callmeback()" class="bg-blue hover:bg-blue-dark text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline" type="button">
+                Envoyer
+              </button>
+              <div id="merci" hidden class="font-bold py-2 px-4">
+                Merci pour votre message, je reviens très vite vers vous !
+              </div>
+            </div>
+          </form>
+        </div>
+        
+
+        <div class="md:w-1/2">
+          <div class="bg-white px-8 pt-6 pb-8 mb-4 ">
+            <h2 class="mb-6">Camilab</h2>
+            <p class="mb-2">3 rue de Franche Comté</p>
+            <p class="mb-6">50100 Cherbourg-En-Cotentin</p>
+            <p class="mb-6">06.99.92.11.59</p>
+            <p>contact@camilab.co</p>
           </div>
-
+        </div>
+        
+      
+      </div>
+      
+      
     </section>
     
     <footer class="font-sans bg-white py-8 px-4">
@@ -394,8 +360,7 @@
         <div class="w-full text-grey-darkest mt-6 md:mt-0 leading-normal text-justify">
           <h4 class="py-2 uppercase font-bold tracking-wide ">Qui sommes nous ?</h4>
           <p> <b>Bonjour 👋 , je suis Hervé Rincent.</b> </p>
-              <p>Camilab est l'agence que j'ai lancée en 2018 pour héberger mon métier de développeur freelance.
-              J'accompagne le développement numérique des entreprises et les débuts des start-up avec des <b>missions sur-mesure</b>.</p>
+              <p>Camilab est l'agence que j'ai lancée en 2018 pour accompagner le développement numérique des entreprises et les débuts des start-up avec des <b>missions sur-mesure</b>.</p>
               <p>J'aime écouter mes clients parler de leur métier et analyser avec eux les opportunités offertes par le numérique pour innover.</p>
               <p> 
               Mon goût pour le code (dès l'age de 13 ans) s'est marié avec une expérience d'une vingtaine d'années chez un grand nom du secteur français de l'énergie. 
@@ -416,20 +381,32 @@
           </div>
         </div>
       </div>
-      <div class="pt-4 mt-4 text-grey-darker text-xs border-t border-grey-lighter text-center"> ©2018 Camilab - 3 rue Franche Comté 50100 Cherbourg. All rights reserved.</div>
+      <div class="pt-4 mt-4 text-grey-darker text-xs border-t border-grey-lighter text-center"> ©2019 Camilab - 3 rue Franche Comté 50100 Cherbourg. All rights reserved.</div>
     </footer>
   
     <script>
 
         function callmeback(e) {
-          userName = document.getElementById('username').value;
-          phone = document.getElementById('phone').value;
-          url = "https://hooks.zapier.com/hooks/catch/4312166/0ly8p8/"
+          var userName  = document.getElementById('nom').value;
+          var email     = document.getElementById('email').value;
+          var message   = document.getElementById('message').value;
+          var url       = "https://hooks.zapier.com/hooks/catch/4312166/0ly8p8/"
           httpRequest = new XMLHttpRequest();
           httpRequest.open('POST', url);
           httpRequest.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
-          httpRequest.send('userName=' + encodeURIComponent(userName) + '&phone=' + encodeURIComponent(phone));
-          document.getElementById('popup').hidden=true
+          httpRequest.send('userName=' + encodeURIComponent(userName) + '&email=' + encodeURIComponent(email) + '&message=' + encodeURIComponent(message));
+          document.getElementById('merci').hidden=false
+        };
+
+        function playSynaeptique(e) {
+          console.log("Clic image !", e.target)
+          var img = e.target;
+          console.log("Clic image !", img.src.indexOf('synaeptique.png'))
+          if (img.src.indexOf('synaeptique.png') > 0 ) {
+            img.src = './assets/synaeptique.gif';
+          } else {
+            img.src = './assets/synaeptique.png'
+          }
         };
 
         (function() { var qs,js,q,s,d=document, gi=d.getElementById, ce=d.createElement, gt=d.getElementsByTagName, id="typef_orm_share", b="https://embed.typeform.com/"; if(!gi.call(d,id)){ js=ce.call(d,"script"); js.id=id; js.src=b+"embed.js"; q=gt.call(d,"script")[0]; q.parentNode.insertBefore(js,q) } })();
@@ -461,6 +438,10 @@
             }
     
             addEventListener('scroll',processScroll);
+
+            document.getElementById('synaeptique').addEventListener('click', function (e) {
+              playSynaeptique(e);
+            }); 
     
             window.addEventListener("load", function(event) {
                 processScroll(event);
