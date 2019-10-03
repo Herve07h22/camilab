@@ -424,6 +424,12 @@
                   && rect.top <= (window.innerHeight || document.documentElement.clientHeight)
                 )
             };
+
+            function setStyle(el,spec) {
+                for (var n in spec) {
+                    el.style[n] = spec[n];
+                }
+            }
     
             function processScroll(e) {
                 // Array.from not supported by IE
@@ -435,7 +441,8 @@
 
                 img_animation.map( function(el) {
                     if (elementInViewport(el)) {
-                        el.style = " visibility: visible; opacity: 1; transform: translate(0,0); transition: opacity 0.4s cubic-bezier(0.5, 0, 0, 1) 0.35s, transform 0.4s cubic-bezier(0.5, 0, 0, 1) 0.35s;"
+                        // el.style = " visibility: visible; opacity: 1; transform: translate(0,0); transition: opacity 0.4s cubic-bezier(0.5, 0, 0, 1) 0.35s, transform 0.4s cubic-bezier(0.5, 0, 0, 1) 0.35s;"
+                        setStyle(el, {visibility:'visible', opacity:1, transform:'translate(0,0)', transition:'opacity 0.4s cubic-bezier(0.5, 0, 0, 1) 0.35s, transform 0.4s cubic-bezier(0.5, 0, 0, 1) 0.35s'});
                     }
                     
                 });
@@ -446,7 +453,8 @@
                 }
                 txt_animation.map( function(el) {
                     if (elementInViewport(el)) {
-                        el.style = " visibility: visible; opacity: 1; transform: translate(0,0); transition: opacity 0.4s cubic-bezier(0.5, 0, 0, 1) 0s, transform 0.4s cubic-bezier(0.5, 0, 0, 1) 0s;"
+                        //el.style = " visibility: visible; opacity: 1; transform: translate(0,0); transition: opacity 0.4s cubic-bezier(0.5, 0, 0, 1) 0s, transform 0.4s cubic-bezier(0.5, 0, 0, 1) 0s;"
+                        setStyle(el, {visibility:'visible', opacity:1, transform:'translate(0,0)', transition:'opacity 0.4s cubic-bezier(0.5, 0, 0, 1) 0s, transform 0.4s cubic-bezier(0.5, 0, 0, 1) 0s'});
                     }
                 });
             }
