@@ -64,8 +64,8 @@
               <img src="./assets/undraw_finance_0bdk.svg" alt="image" class="w-full">
             </div>
         </div>
-        <div>
 
+        <div>
           <p class="leading-normal justify-center mb-4 mt-2 md:mt-0 px-2 text-justify">
               <ul class="list-reset mx-2">
                 <li class="text-xl mb-4"><i class="far fa-arrow-alt-circle-right mr-2"></i>Ils automatisent vos activités et vous font gagner du temps.</li>
@@ -417,18 +417,18 @@
 
         document.addEventListener("DOMContentLoaded", function(event) {
            
-            const elementInViewport = function (el) {
+            function elementInViewport(el) {
                 var rect = el.getBoundingClientRect();
                 return (
-                rect.top    >= 0
-                && rect.top <= (window.innerHeight || document.documentElement.clientHeight)
+                  rect.top    >= 0
+                  && rect.top <= (window.innerHeight || document.documentElement.clientHeight)
                 )
             };
     
             function processScroll(e) {
                 // Array.from not supported by IE
-                img_animation_list = document.getElementsByClassName("animation-img");
-                img_animation = [];
+                var img_animation_list = document.getElementsByClassName("animation-img");
+                var img_animation = [];
                 for (var i = 0; i < img_animation_list.length; i++) {
                   img_animation[i] = img_animation_list[i];
                 }
@@ -439,8 +439,8 @@
                     }
                     
                 });
-                txt_animation_list = document.getElementsByClassName("animation-txt");
-                txt_animation = [];
+                var txt_animation_list = document.getElementsByClassName("animation-txt");
+                var txt_animation = [];
                 for (var i = 0; i < txt_animation_list.length; i++) {
                   txt_animation[i] = txt_animation_list[i];
                 }
