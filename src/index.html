@@ -1,18 +1,19 @@
+<!DOCTYPE html>
 <html lang="fr">
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link href=https://fonts.googleapis.com/css?family=Muli:300,400,600,700,800,900 rel="stylesheet">
-    <link rel="stylesheet" href=https://use.fontawesome.com/releases/v5.0.13/css/all.css integrity=sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp crossorigin="anonymous">
+    <link href=https://fonts.googleapis.com/css?family=Muli:300,400,600,700,800,900 rel="stylesheet" />
+    <link rel="stylesheet" href=https://use.fontawesome.com/releases/v5.0.13/css/all.css integrity=sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp crossorigin="anonymous" />
     <title>Camilab - Votre business décolle grâce au web</title>
     <meta name="description" content="Camilab est une agence qui accompagne le développement numérique des entreprises et les débuts des start-up.">
     <link rel="canonical" href="https://www.camilab.co" />
     <meta name="google-site-verification" content="LfmkHbXrfgFnPNz9P7rdhBQexLL0OrQ0wYV_jI9vyMc" />
-    <link rel="icon" type="image/png" sizes="32x32" href="https://camilab.co/assets/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="96x96" href="https://camilab.co/assets/favicon-96x96.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="https://camilab.co/assets/favicon-16x16.png">
-    <link rel="shortcut icon" type="image/ico" href="https://camilab.co/assets/favicon.ico"/>
+    <link rel="icon" type="image/png" sizes="32x32" href="https://camilab.co/assets/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="96x96" href="https://camilab.co/assets/favicon-96x96.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="https://camilab.co/assets/favicon-16x16.png" />
+    <link rel="shortcut icon" type="image/ico" href="https://camilab.co/assets/favicon.ico" />
     
     <meta name="theme-color" content="#ffffff">
     <meta name="twitter:card" content="summary_large_image">
@@ -387,6 +388,8 @@
   
     <script>
 
+      
+
         function callmeback(e) {
           var userName  = document.getElementById('nom').value;
           var email     = document.getElementById('email').value;
@@ -423,14 +426,24 @@
             };
     
             function processScroll(e) {
-                img_animation = Array.from(document.getElementsByClassName("animation-img"));
+                // Array.from not supported by IE
+                img_animation_list = document.getElementsByClassName("animation-img");
+                img_animation = [];
+                for (var i = 0; i < img_animation_list.length; i++) {
+                  img_animation[i] = img_animation_list[i];
+                }
+
                 img_animation.map( function(el) {
                     if (elementInViewport(el)) {
                         el.style = " visibility: visible; opacity: 1; transform: translate(0,0); transition: opacity 0.4s cubic-bezier(0.5, 0, 0, 1) 0.35s, transform 0.4s cubic-bezier(0.5, 0, 0, 1) 0.35s;"
                     }
                     
                 });
-                txt_animation = Array.from(document.getElementsByClassName("animation-txt"));
+                txt_animation_list = document.getElementsByClassName("animation-txt");
+                txt_animation = [];
+                for (var i = 0; i < txt_animation_list.length; i++) {
+                  txt_animation[i] = txt_animation_list[i];
+                }
                 txt_animation.map( function(el) {
                     if (elementInViewport(el)) {
                         el.style = " visibility: visible; opacity: 1; transform: translate(0,0); transition: opacity 0.4s cubic-bezier(0.5, 0, 0, 1) 0s, transform 0.4s cubic-bezier(0.5, 0, 0, 1) 0s;"
