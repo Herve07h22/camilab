@@ -33,7 +33,7 @@ const Projects = () => (
         titre="Un outil SaaS de commercialisation de leads"
         image="LeadsB2B.png"
         alt="Lead management screenshot"
-        competences={["NodeJS", "React", "Postgresql", "Docker", "Web Push", "Stripe"]}
+        competences={["NodeJS", "React", "Postgresql", "Docker", "Stripe"]}
         qui="David exploite plusieurs sites internet à fort trafic sur la Suisse et la Belgique. Il propose aux particuliers 
         un service de mise en relation avec des entreprises locales pour des prestations d'entretiens, de travaux ou de déménagement."
         quoi="Nous avons codé un outil SaaS à destination des entreprises pour contacter des clients et leur proposer un devis en ligne. 
@@ -43,7 +43,7 @@ const Projects = () => (
         titre="Un portail interne de GED et de formation"
         image="portail.png"
         alt="Document and training webapp screenshot"
-        competences={["Python", "React", "Postgresql", "Docker"]}
+        competences={["Python", "Django", "React", "Postgresql"]}
         qui="Christelle dirige le service administratif et ressources humaines d'un grand groupe de distribution automobile.
         Ses équipes élaborent les procédures, formulaires et reporting pour tous les employés du groupe."
         quoi="Elle nous a confié la réalisation d'une application web qui facilite l'accès aux fichiers nécessaires selon le profil de chaque employé.
@@ -67,7 +67,7 @@ const Projects = () => (
         titre="Explorer ses données avec ElasticSearch"
         image="kibana.png"
         alt="Kibana screenshot"
-        competences={["elasticsearch", "python", "logstash"]}
+        competences={["Elasticsearch", "Python", "Logstash"]}
         qui="Carine est responsable du département Marketing d'un grand groupe, qui communique et interagit avec ses clients au travers
         de plusieurs sites thématiques. Des millions de données étaient produites chaque jour sur les serveurs hébergeant les sites, 
         mais elles n'étaient pas utilisables."
