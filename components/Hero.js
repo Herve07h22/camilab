@@ -6,7 +6,7 @@ const Hero = () => (
 
     <div className=" flex flex-row items-center flex-wrap mt-4">
       <div className="w-full py-12 w-full md:w-1/2">
-        <h1 className="my-4 font-bold text-5xl text-center text-gray-500">
+        <h1 className="my-4 font-bold text-5xl text-center text-gray-600">
           Nous fabriquons les
           <span className="text-black"> logiciels</span> de votre entreprise.
         </h1>

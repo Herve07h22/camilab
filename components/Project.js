@@ -4,7 +4,7 @@ const Project = ({ qui, quoi, titre, image, imageClic, alt, competences }) => {
   const [animated, setAnimated] = useState(false);
   const diplayedImage = imageClic && animated ? imageClic : image;
   return (
-    <div className="transition duration-500 ease-in-out md:w-1/2m w-full bg-white rounded-lg border-grey-darker shadow mx-2 my-8 px-4 py-2 hover:transform-scale-subtle flex flex-col justify-between">
+    <div className="transition duration-500 ease-in-out md:w-1/2m w-full bg-white rounded-lg border-gray-500 shadow mx-2 my-8 px-4 py-2 hover:transform-scale-subtle flex flex-col justify-between">
       <img
         className="w-full h-auto"
         style={{ minHeight: "1px" }}
@@ -25,7 +25,7 @@ const Project = ({ qui, quoi, titre, image, imageClic, alt, competences }) => {
         ))}
       </p>
 
-      <div className="font-medium text-grey-darkest text-sm text-justify py-2">
+      <div className="font-medium text-gray-600 text-sm text-justify py-2">
         <p className="mb-1">{qui}</p>
         <p>{quoi}</p>
       </div>
