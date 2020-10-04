@@ -1,0 +1,68 @@
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+.animation-img {
+  visibility: hidden;
+  opacity: 0;
+  transform: translate(-20px, 0);
+}
+
+.animation-txt {
+  visibility: hidden;
+  opacity: 0;
+  transform: translate(0, 20px);
+}
+
+.hubspot-form {
+  max-height: 360px;
+  overflow: hidden;
+}
+
+.w-1\/3m {
+  width: 32%;
+}
+
+@media (min-width: 768px) {
+  .md\:w-1\/3m {
+    width: 32%;
+  }
+}
+
+.w-1\/2m {
+  width: 48%;
+}
+
+@media (min-width: 768px) {
+  .md\:w-1\/2m {
+    width: 48%;
+  }
+}
+.transition-normal {
+  transition: 0.2s ease-in-out;
+}
+
+.-translate-50-50 {
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.transform-scale-1-1 {
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
+
+.hover\:translate-y-1:hover {
+  -webkit-transform: translateY(-1px);
+  transform: translateY(-1px);
+}
+
+.hover\:transform-scale-subtle:hover {
+  -webkit-transform: scale(1.03);
+  transform: scale(1.03);
+}
